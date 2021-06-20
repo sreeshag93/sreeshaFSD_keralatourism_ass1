@@ -1,0 +1,335 @@
+*{box-sizing: border-box;}
+.video-header{height: 100vh;
+         display: flex;
+	     align-items: center;
+	     color: #fff;
+	
+}
+
+.wrap{
+	max-width: 960px;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	margin:auto;
+	text-align: center;
+	
+}
+	
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+    position:fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min: height 100%;;}
+#myAlappuzha{
+      position:fixed;
+      right: 0;
+      bottom: 0;
+      width: 100vw; 
+    height:100vh;;
+  }
+  #mykasaragod {
+    position:fixed;
+    right: 0;
+    bottom: 0;
+    width: 100vw; 
+    height:100vh;;
+  }
+  #mykannur {
+    position:fixed;
+    right: 0;
+    bottom: 0;
+    width: 100vw; 
+    height:100vh;
+  }
+  /* Add some content at the bottom of the video/page */
+ 
+.header-overlay{
+	height: 100vh;
+	width: 100vw;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(34,33,33,0.65);
+	opacity: 0.80;
+	
+}
+
+.header-content{
+	z-index: 2;
+	margin-top:20%;
+	padding: 0rem 5rem;
+	
+}
+
+.header-content h1{
+	font-size: 40px;
+	margin-bottom: 0;
+  
+	
+}
+.header-content p{
+	font-size: 1.5rem;
+	display: block;
+	padding-bottom: 2rem;
+	margin-top: 10px; padding: auto;
+}
+
+section{text-align: center; font-size: 1.5rem;}
+
+li {
+    display: inline;
+  }
+  .hoverable{
+    display:inline-block;
+    backface-visibility: hidden;
+    vertical-align: middle;
+    position:relative;
+    box-shadow: 0 0 1px rgba(0,0,0,0);
+    tranform: translateZ(0);
+    transition-duration: .3s;
+    transition-property:transform;
+  }
+  
+  .hoverable:before{
+    position:absolute;
+    pointer-events: none;
+    z-index:-1;
+    content: '';
+    top: 100%;
+    left: 5%;
+    height:10px;
+    width:90%;
+    opacity:0;
+    background: -webkit-radial-gradient(center, ellipse, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 80%);
+    background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 80%);
+    /* W3C */
+    transition-duration: 0.3s;
+    transition-property: transform, opacity;
+  }
+  
+  .hoverable:hover, .hoverable:active, .hoverable:focus{
+    transform: translateY(-5px);
+  }
+  .hoverable:hover:before, .hoverable:active:before, .hoverable:focus:before{
+    opacity: 1;
+    transform: translateY(-5px);
+  }
+  
+  
+ 
+    .navbar{
+      text-align: center !important;
+      float: none;
+      display: inline-block;font-size: x-large;
+    }
+  
+  
+  body {
+    background-color: rgba(0,0,0,1);
+    font-weight:600;
+    float: right;
+    text-align:right;
+    color: white;
+  }
+  
+  nav {
+    background: none !important;
+    text-transform:uppercase;
+    li {
+      margin-left: 3em;
+      margin-right: 3em;
+      a{
+        transition: .5s color ease-in-out;
+      }
+    }
+  }
+  
+  .page-title {
+    opacity: .85 !important;
+  }
+  section {
+    color: #fff;
+    padding: 1em 1.5em;
+    margin-bottom: 1em;
+  }
+  
+  .u-bg-ink {background-color: #201747;}
+  .u-bg-teal {background-color: #00A9CE;}
+  
+  .u-bg-red {
+    background: linear-gradient(to left, lighten(orange, 28%), crimson);
+  }
+  
+  button {
+    background-color: rgb(70, 5, 5);
+    border: 0;
+    border-radius: 8px;
+    // color must be black for background to completely show through, also works as fallback text color for IE and older browsers
+    color: #000;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 2em;
+    // make text look transparent so container background shows through:
+    mix-blend-mode: screen;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+    &:focus {box-shadow: 0 0 0 5px yellow;}
+  }
+  
+  
+  /* body {font-family: Verdana; margin: 0; padding: 0 1em; background: Seashell; color: darken(navy, 13%);} */
+  
+  .flex-me {
+    display: flex; 
+    
+    > * {
+      flex: 1;
+      
+      + * {margin-left: 1em;}
+    }
+  }
+  #login{color:rgb(255, 255, 255);
+    font-size: x-large;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    position: sticky;
+    
+  }
+  #submit{color:rgb(255, 255, 255);
+    font-size: x-large;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    position: sticky;
+    
+  }
+
+:root {
+  --color: #3c3163;
+  --transition-time: 0.5s;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+a {
+  color: inherit;
+}
+
+.cards-wrapper {
+  display: grid;
+  justify-content: center;
+  align-items:;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 3rem;
+  padding: 1rem;
+  margin: 0 auto;
+  width: max-content;
+}
+
+.card {
+  font-family: 'Heebo';
+  --bg-filter-opacity: 0.2;
+  background-image: linear-gradient(rgba(0,0,0,var(--bg-filter-opacity)),rgba(0,0,0,var(--bg-filter-opacity))), var(--bg-img);
+  height: 14em;
+  width: 18em;
+  font-size: 1 em;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  border-radius: 1em;
+  padding: 1em;
+  display: flex;
+  align-items: flex-end;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 5em -1em black;
+  transition: all, var(--transition-time);
+  position: relative;
+  overflow:scroll;
+  border: 10px solid #ccc;
+  text-decoration: none;
+}
+
+.card:hover {
+  transform: rotate(0);
+}
+
+.card h1 {
+  margin: 0;
+  font-size: 1.5em;
+  line-height: 1.2em;
+}
+
+.card p {
+  font-size: 0.75em;
+  font-family: 'Open Sans';
+  margin-top: 0.5em;
+  line-height: 2em;
+}
+
+
+/* .card:hover .tags .tag {
+  background: var(--color);
+  color: white;
+} */
+
+.card:before, .card:after {
+  content: '';
+  transform: scale(0);
+  transform-origin: top left;
+  border-radius: 50%;
+  position: absolute;
+  left: -50%;
+  top: -50%;
+  z-index: -5;
+  transition: all, var(--transition-time);
+  transition-timing-function: ease-in-out;
+}
+
+.card:before {
+  background: #ddd;
+  width: 250%;
+  height: 250%;
+}
+
+.card:after {
+  background: white;
+  width: 200%;
+  height: 200%;
+}
+
+.card:hover {
+  color: var(--color);
+}
+
+.card:hover:before, .card:hover:after {
+  transform: scale(1);
+}
+
+.card-grid-space .num {
+  font-size: 3em;
+  margin-bottom: 1.2rem;
+  margin-left: 1rem;
+}
+
+.info {
+  font-size: 1.2em;
+  display: flex;
+  padding: 1em 3em;
+  height: 3em;
+}
+
+.info img {
+  height: 3em;
+  margin-right: 0.5em;
+}
+
+.info h1 {
+  font-size: 1em;
+  font-weight: normal;
+}
+
+/* form */

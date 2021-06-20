@@ -1,0 +1,128 @@
+
+*{box-sizing: border-box;}
+body{ margin: 0;padding: 0;
+    font-family: Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana," sans-serif";
+       font-size: 1rem;
+       line-height: 1.5;
+       color: #333;
+       background-color: black;
+       overflow-x: hidden;
+   }
+   
+   .wrap{
+       max-width: 960px;
+       padding-left: 1rem;
+       padding-right: 1rem;
+       margin:auto;
+       /* text-align: center; */
+       
+   }
+       
+   /* Style the video: 100% width and height to cover the entire window */
+   
+    
+   .header-overlay{
+       height: 100%;
+       width: 100%;
+       position: ;
+       top: 0;
+       left: 0;
+       opacity: 0.80;) 	
+   }
+   
+   .header-content{
+       z-index: 2;
+       margin-top:20%;
+       padding: 0rem 5rem;
+       
+   }
+   
+   .header-content h1{
+       font-size: 50px;
+       margin-bottom: 0;
+       text-align: right;
+     
+       
+   }
+   .header-content p{
+       font-size: 1rem;
+       display: block;
+       padding-bottom: 2rem;
+       margin-top: 10px; padding: auto;
+   }
+   
+   section{text-align: center; font-size: 1.5rem;}
+   
+   li {
+       display: inline;
+     }
+     .hoverable{
+       display:inline-block;
+       backface-visibility: hidden;
+       vertical-align: middle;
+       position:relative;
+       box-shadow: 0 0 1px rgba(0,0,0,0);
+       transform: translateZ(0);
+       transition-duration: .3s;
+       transition-property:transform;
+     }
+       .navbar{
+         text-align: center;
+         float: none;
+         display: inline-block;font-size: x-large; text-decoration-color: blue;
+       }
+     button {
+       background-color: rgb(70, 5, 5);
+       border: 0;
+       border-radius: 8px;
+       color: #000;
+       font-family: inherit;
+       font-weight: bold;
+       font-size: 2em;
+       display: block;
+       margin-left: auto;
+       margin-right: auto;
+     }
+     
+     #login{
+         margin-top:50%%;
+       color:rgb(146, 120, 120);
+       font-size: x-large;
+       font-family:Georgia, 'Times New Roman', Times, serif;
+       position: sticky;
+     }
+     
+      /* Add some content at the bottom of the video/page */
+      .content {
+        position: fixed;
+        color: #f1f1f1;
+        width: 50%;
+        /* margin-left: 50%; */
+        text-align: center;
+        padding: 50px;
+        margin-top: 150px;
+      }
+      #para{font-size:x-large; text-align:justify;}
+      .coro{
+        position:relative;
+        bottom: 11%;
+       /* min-width: 1000px;
+       min-height: 600px;
+       max-width: 1000px;
+       max-width: 600px; */
+       width:1000px;
+       height: 400px;
+
+        margin-left: 50%;
+        /* margin-top: 50%; */
+        margin-bottom: 10%;
+        
+
+      }
+      .font{font-size: 50px;
+        margin-bottom: 0;
+        text-align: right;
+        color: rgb(235, 235, 235);
+      }
+      #more {display: none;}
+      p{color: cornsilk;}
